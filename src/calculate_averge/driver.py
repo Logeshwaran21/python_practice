@@ -1,4 +1,10 @@
-import util
+from util import average
 
-Intput = [1,2,3,4,5]
-print(sum_of_number(Intput))
+
+Total_values = int(input("Enter the number of values "))
+list_of_Input =[]
+for i in range(Total_values):
+    Input = int(input(f"Enter the value: "))
+    list_of_Input.append(Input)
+
+average(list_of_Input)

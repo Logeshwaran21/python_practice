@@ -1,13 +1,11 @@
-from unittest import result
+def average(given):
+    total=0
+    count=0
 
-
-def sum_of_number(a):
-    result = 0
-    for i in range(len(a)):
-        result = i+result
-
-a=(1,2,3,4,5,6)
-sum_of_number(a)
-
+    for i in given:
+        total += i
+        count +=1
+    result = (total/count)
+    print(result)
 
 
