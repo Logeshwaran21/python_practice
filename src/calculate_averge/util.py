@@ -3,11 +3,9 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s:%(filename)s:%(level
 def average(given):
     total=0
     count=0
-
     for i in given:
          total += i
          count +=1
-
 
     if total is 0:
         logging.warning("Zero Average Detected")
