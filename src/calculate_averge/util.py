@@ -1,5 +1,5 @@
 import logging
-logging.basicConfig(filename="log.test_average", level=logging.DEBUG, format="%(asctime)s:%(filename)s:%(levelno)s:%(message)s")
+logging.basicConfig(level=logging.DEBUG, format="%(asctime)s:%(filename)s:%(levelno)s:%(message)s")
 def average(given):
     total=0
     count=0
