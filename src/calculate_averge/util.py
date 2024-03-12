@@ -1,3 +1,4 @@
+import logging
 def average(given):
     total=0
     count=0
@@ -6,6 +7,6 @@ def average(given):
         total += i
         count +=1
     result = (total/count)
-    print(result)
+    logging.warning(result)
 
 
