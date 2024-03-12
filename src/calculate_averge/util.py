@@ -8,9 +8,13 @@ def average(given):
          count +=1
 
     if total is 0:
-        logging.warning("Zero Average Detected")
+        result_1= "Zero Average Detected"
+        logging.warning(result_1)
+        return result_1
     else:
         result = (total / count)
-        logging.info(result)
+        rounded_result= round(result,2)
+        logging.info(f"Average: {rounded_result:.2f}")
+        return rounded_result
 
 
