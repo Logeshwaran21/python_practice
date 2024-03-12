@@ -1,4 +1,5 @@
 import logging
+logging.basicConfig(filename="log.test", level=logging.DEBUG, format="%(asctime)s:%(filename)s:%(levelno)s:%(message)s")
 def average(given):
     total=0
     count=0
@@ -7,6 +8,6 @@ def average(given):
         total += i
         count +=1
     result = (total/count)
-    logging.warning(result)
+    logging.debug(result)
 
 
