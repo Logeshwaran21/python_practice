@@ -1,5 +1,5 @@
 import logging
-logging.basicConfig(level=logging.DEBUG, format="%(asctime)s:%(filename)s:%(levelno)s:%(message)s")
+logging.basicConfig(level=logging.INFO, format="%(asctime)s:%(filename)s:%(levelno)s:%(message)s")
 def average(given):
     total=0
     count=0
@@ -13,6 +13,6 @@ def average(given):
         logging.warning("Zero Average Detected")
     else:
         result = (total / count)
-        logging.debug(result)
+        logging.info(result)
 
 
